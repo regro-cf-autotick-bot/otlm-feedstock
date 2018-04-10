@@ -1,4 +1,4 @@
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 {% set ot_version = "1.10rc1" %}
 
 package:
@@ -8,31 +8,31 @@ package:
 source:
   fn: otlm-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otlm/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 6752369d125014fe1d85d50cacb8007e104b83065e66cfc1f673663fcaa64781  # [not win]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: c743dd54cf0e13975b544e0df340e41910fd0268d961a16b75cfcaa2037f64b6  # [win32 and py27]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: d78dbf836a396ac1f6bbb0bfd0fdc1db4469492c310d1b15fbb613b98df094ef  # [win64 and py27]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: 489800de97087675a99de882362f60d3f6b4fefdf16084824c856f837edb2e41  # [win32 and py35]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: 7e5934ef5a4abdefdffba4ae82e0d9d8550066d9b4ac45448bcaaff8ad1029ce  # [win64 and py35]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py3.6-i686.exe  # [win32 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.6-i686.exe  # [win32 and py36]
-  sha256: 551a16428303dd8066d7c824558bd190d65a098023cda97b1fdff4a1f0f0801b  # [win32 and py36]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
   fn: otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 3787e75f87cb82a4d8f9961ce3b91a917aeb3e16fde920c25c2748bdfd764e3a  # [win64 and py36]
+  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804
 
 build:
   number: 0
