@@ -39,9 +39,11 @@ build:
 
 requirements:
   build:
-    - toolchain
-    - python
     - cmake  # [not win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
     - swig  # [not win]
     - openturns  # [not win]
 
