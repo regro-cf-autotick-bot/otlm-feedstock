@@ -23,7 +23,7 @@ source:
   sha256: e4ab03b63dbd3d3c89e791259e146ec083da2d85b0958ef76b193cf04c6cd4f9  # [win64 and py37]
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -33,11 +33,11 @@ requirements:
   host:
     - python
     - swig  # [not win]
-    - openturns 1.12*  # [not win]
+    - openturns  # [not win]
 
   run:
     - python
-    - openturns 1.12*
+    - openturns
 
 test:
   imports:
