@@ -1,5 +1,5 @@
 {% set version = "0.6" %}
-{% set ot_version = "1.11rc1" %}
+{% set ot_version = "1.12rc1" %}
 
 package:
   name: otlm
@@ -9,21 +9,21 @@ source:
   fn: otlm-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otlm/archive/v{{ version }}.tar.gz  # [not win]
   sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804  # [not win]
-  
+
   fn: otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   sha256: 8e4e1afa54472866df80b4c3f9e85c4097a4a67cb0c12d89a375a8fc7b1939dd  # [win64 and py27]
-  
-  fn: otlm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: e4ab03b63dbd3d3c89e791259e146ec083da2d85b0958ef76b193cf04c6cd4f9  # [win64 and py35]
 
   fn: otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   sha256: c72912f2f84aba7bc9bf13090d65e08612e4ad209aa1d8f5de13e8b0719c98af  # [win64 and py36]
 
+  fn: otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
+  sha256: e4ab03b63dbd3d3c89e791259e146ec083da2d85b0958ef76b193cf04c6cd4f9  # [win64 and py37]
+
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -33,11 +33,11 @@ requirements:
   host:
     - python
     - swig  # [not win]
-    - openturns  # [not win]
+    - openturns 1.12*  # [not win]
 
   run:
     - python
-    - openturns
+    - openturns 1.12*
 
 test:
   imports:
