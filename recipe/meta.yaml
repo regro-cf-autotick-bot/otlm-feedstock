@@ -12,15 +12,15 @@ source:
 
   fn: otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: 8e4e1afa54472866df80b4c3f9e85c4097a4a67cb0c12d89a375a8fc7b1939dd  # [win64 and py27]
+  sha256: ba801aa63ab3292cb35a994e4b865c38dd776c2517f9f5336ae937744b7b222f  # [win64 and py27]
 
   fn: otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: c72912f2f84aba7bc9bf13090d65e08612e4ad209aa1d8f5de13e8b0719c98af  # [win64 and py36]
+  sha256: e01fb6679364c920b592820d237ca209b49f0c29a59e6c93d2a5a9a5309b9e0b  # [win64 and py36]
 
   fn: otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  sha256: e4ab03b63dbd3d3c89e791259e146ec083da2d85b0958ef76b193cf04c6cd4f9  # [win64 and py37]
+  sha256: 40dd3a2d5f9e848e6fa248732750fd969d72ab00394b30bddf05e5e6c2f3fdc8  # [win64 and py37]
 
 build:
   number: 2
