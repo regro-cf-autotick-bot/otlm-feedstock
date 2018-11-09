@@ -1,29 +1,16 @@
-{% set version = "0.6" %}
-{% set ot_version = "1.12rc1" %}
+{% set version = "0.7" %}
 
 package:
   name: otlm
   version: {{ version }}
 
 source:
-  fn: otlm-{{ version }}.tar.gz  # [not win]
-  url: https://github.com/openturns/otlm/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 492d23a61df669e1f6ba91ef86f6b5e508d6f7452aaa99f0fb69a3f977850804  # [not win]
-
-  fn: otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: ba801aa63ab3292cb35a994e4b865c38dd776c2517f9f5336ae937744b7b222f  # [win64 and py27]
-
-  fn: otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: e01fb6679364c920b592820d237ca209b49f0c29a59e6c93d2a5a9a5309b9e0b  # [win64 and py36]
-
-  fn: otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otlm-{{ version }}-py3.7-x86_64.exe  # [win64 and py37]
-  sha256: 40dd3a2d5f9e848e6fa248732750fd969d72ab00394b30bddf05e5e6c2f3fdc8  # [win64 and py37]
+  fn: otlm-{{ version }}.tar.gz
+  url: https://github.com/openturns/otlm/archive/v{{ version }}.tar.gz
+  sha256: bf0dbbba380410736c9403fefab91825f5f6356454ad29bf37adfd4d6eef8fc9
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -46,7 +33,7 @@ test:
 about:
   home: http://openturns.org/
   license: LGPL3
-  license_file: COPYING.LESSER  # [not win]
+  license_file: COPYING.LESSER
   summary: Linear model module
 
 extra:
